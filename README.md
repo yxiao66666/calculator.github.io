@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+# 🧮 Simple Calculator App (React + Flask)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a full-stack web application that performs basic arithmetic operations using a **React** frontend and a **Flask** backend API.
 
-## Available Scripts
+## 🔧 Features
 
-In the project directory, you can run:
+- Perform addition, subtraction, multiplication, and division
+- Built with React for the frontend and Flask for the backend
+- Backend logic exposed via a simple REST API
+- JSON communication between client and server
+- CORS enabled for smooth frontend-backend interaction
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📁 Project Structure
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+calculator-app/
+├── frontend/                # React App (Calculator UI)
+│   └── Calculator.js
+├── backend/                 # Flask App (API)
+│   └── server.py
+└── README.md
+```
+---
 
-### `npm test`
+## 🚀 Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+- Node.js and npm
+- Python 3.x
+- `pip` for Python package management
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 🖥️ Frontend Setup (React)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+cd frontend
+npm install
+npm start
+```
+Runs on http://localhost:3000 by default
 
-### `npm run eject`
+### 🧠 Backend Setup (Flask)
+```bash
+Copy
+Edit
+cd backend
+pip install flask flask-cors
+python server.py
+```
+Runs on http://localhost:5000
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 📡 API Endpoint
+POST `/calculate`
+Request Body (JSON):
+```bash
+{
+  "num1": 10,
+  "num2": 5,
+  "operation": "plus"
+}
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Supported Operations:
+- plus
+- minus
+- multiply
+- divide
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Response (JSON):
+```bash
+{
+  "result": 15
+}
+```
 
-## Learn More
+### 🖼️ UI Preview
+Yet to come.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 📝 Notes
+Handles edge cases like division by zero
+Easy to extend with more operations or validation
+Modify the backend URL in Calculator.js if deploying
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 📃 License
+This project is licensed under the MIT License. 
 
-### Analyzing the Bundle Size
+### 🙌 Acknowledgements
+Built with ❤️ using React and Flask.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contributors
+- [yxiao66666](https://www.linkedin.com/in/yxiao66666/) 
