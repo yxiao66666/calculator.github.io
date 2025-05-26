@@ -47,8 +47,6 @@ Runs on http://localhost:3000 by default
 
 ### 🧠 Backend Setup (Flask)
 ```bash
-Copy
-Edit
 cd backend
 pip install flask flask-cors
 python server.py
@@ -88,9 +86,9 @@ Yet to come.
 ---
 
 ### 📝 Notes
-Handles edge cases like division by zero
-Easy to extend with more operations or validation
-Modify the backend URL in Calculator.js if deploying
+- Handles edge cases like division by zero
+- Easy to extend with more operations or validation
+- Modify the backend URL in Calculator.js if deploying
 
 ---
 
