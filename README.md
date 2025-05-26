@@ -43,6 +43,8 @@ npm start
 ```
 Runs on http://localhost:3000 by default
 
+---
+
 ### 🧠 Backend Setup (Flask)
 ```bash
 Copy
@@ -52,6 +54,8 @@ pip install flask flask-cors
 python server.py
 ```
 Runs on http://localhost:5000
+
+---
 
 ### 📡 API Endpoint
 POST `/calculate`
@@ -63,7 +67,6 @@ Request Body (JSON):
   "operation": "plus"
 }
 ```
-
 
 Supported Operations:
 - plus
@@ -77,22 +80,29 @@ Response (JSON):
   "result": 15
 }
 ```
+---
 
 ### 🖼️ UI Preview
 Yet to come.
 
+---
 
 ### 📝 Notes
 Handles edge cases like division by zero
 Easy to extend with more operations or validation
 Modify the backend URL in Calculator.js if deploying
 
+---
 
 ### 📃 License
 This project is licensed under the MIT License. 
 
+---
+
 ### 🙌 Acknowledgements
 Built with ❤️ using React and Flask.
+
+---
 
 ## Contributors
 - [yxiao66666](https://www.linkedin.com/in/yxiao66666/) 
